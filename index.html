@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geography Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="map-container">
+        <img id="world-map" src="https://wallpaperaccess.com/full/3275755.jpg" alt="World Map">
+
+        <div class="quiz-container">
+            <!-- Home Screen -->
+            <div id="home-screen">
+                <h1>WELCOME TO QUIZ</h1>
+            <button onclick="startQuiz()">Start Quiz</button>
+            </div>
+
+            <!-- Quiz Screen -->
+            <div id="quiz-screen" style="display:none;">
+                <h2 id="question-text">Question</h2>
+                <div id="options-container"></div>
+                <p id="feedback"></p>
+                <button id="next-btn" onclick="nextQuestion()" style="display:none;">Next</button>
+            </div>
+
+            <!-- Result Screen -->
+            <div id="result-screen" style="display:none;">
+                <h2>Quiz Completed!</h2>
+                <p>Your Score: <span id="score">0</span></p>
+                <button onclick="restartQuiz()">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
